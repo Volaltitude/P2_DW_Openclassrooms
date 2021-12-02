@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, inititial-scale=1.0", user-scalable=no>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="https://kit.fontawesome.com/4d935f5051.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Booki</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="./images/logo/Booki.png"/>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#accomodation-anchor">Hébergements</a></li>
+            <li><a href="#activities-anchor">Activités</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="search">
+    <div class="search-title">
+        <h1>
+            Trouvez votre hébergement pour des vacances de rêve
+        </h1>
+        <p>
+            En plein centre ville ou en pleine nature
+        </p>
+    </div>
+    <form action="" method="get" class="search-form">
+        <div class="search-logo">
+            <label for="position"><i class="fas fa-map-marker-alt"></i></label>
+        </div>
+        <div>
+            <input type="text" name="position" id="position" value="Marseille, France">
+        </div>
+        <div>
+            <input type="submit" value="Rechercher" class="search-button">
+        </div>
+    </form>
+    <div class="filters">
+        <div class="filters-list">
+            <h2>
+                Filtres
+            </h2>
+        </div>
+        <div class="filters-list">
+            <div class="filters-element">
+                <div class="filters-logo">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="filters-description">
+                    <a href="#"><span>Economique</span></a>
+                </div>
+            </div>
+            <div class="filters-element">
+                <i class="fas fa-child"></i>
+                <a href="#">Familial</a>
+            </div>
+            <div class="filters-element">
+                <i class="fas fa-heart"></i>
+                <a href="#">Romantique</a>
+            </div>
+            <div class="filters-element">
+                <i class="fas fa-dog"></i>
+                <a href="#">Animaux autorisés</a>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <p>
+            <i class="fas fa-info"></i>
+        </p>
+        <p>
+            Plus de 500 logements sont disponibles dans cette ville
+        </p>
+    </div>
+</section>
+
+<main>
+    <div class="accomodation">
+        <h2 id="accomodation-anchor">
+            Hébergements à Marseille
+        </h2>
+        <div class="accomodation-items">
+            <div class="accomodation-example">
+                <p><img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo-auberge-cannebière"/></p>
+                <h3>
+                    Auberge de La Cannebière 
+                </h3>
+                <p>
+                    Nuit à partir de <em>25€</em>
+                </p>
+                <p><img src="#" alt="logo-4-stars"/></p>
+            </div>
+            <div class="accomodation-example">
+                <p><img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo-hotel-port"/></p>
+                <h3>
+                    Hôtel du port
+                </h3>
+                <p>
+                    Nuit à partir de 52€
+                </p>
+                <p><img src="#" alt="logo-5-stars"/></p>
+            </div>
+            <div class="accomodation-example">
+                <p><img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo-hotel-mouettes"/></p>
+                <h3>
+                    Hôtel Les Mouettes
+                </h3>
+                <p>
+                    Nuit à partir de 76€
+                </p>
+                <p><img src="#" alt="logo-4-stars"/></p>
+            </div>
+            <div class="accomodation-example">
+                <p><img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photo-hotel-mer"/></p>
+                <h3>
+                    Hôtel de La mer
+                </h3>
+                <p>
+                    Nuit à partir de 46€
+                </p>
+                <p><img src="#" alt="logo-3-stars"/></p>
+            </div>
+            <div class="accomodation-example">
+                <p><img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo-auberge-panier"/></p>
+                <h3>
+                    Auberge Le Panier
+                </h3>
+                <p>
+                    Nuit à partir de <em>23€</em>
+                </p>
+                <p><img src="#" alt="logo-stars"/></p>
+            </div>
+            <div class="accomodation-example">
+                <p><img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photo-hotel-amina"/></p>
+                <h3>
+                    Hôtel chez Amina
+                </h3>
+                <p>
+                    Nuit à partir de 96€
+                </p>
+                <p><img src="#" alt="logo-5-stars"/></p>
+            </div>
+        </div>
+        <p>
+            Afficher plus
+        </p>
+    </div>
+    <div class="most-popular">
+         <div class="most-popular-title">
+            <h2>
+                Les plus populaires
+            </h2>
+            <p><img src="#" alt="logo-most-popular"/></p>
+        </div>
+        <div class="most-popular-example">
+            <p><img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="phtot-hotel-soleil"/></p>
+            <div class="most-popular-description">
+                <h3>
+                    Hotel Le soleil du matin
+                </h3>
+                <p>
+                    Nuit à partir de 128€
+                </p>
+                <p><img src="#" alt="logo-5-stars"/></p>
+            </div>
+        </div>
+        <div class="most-popular-example">
+            <p><img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="phtot-chambres-hotes"/></p>
+            <div class="most-popular-description">
+                <h3>
+                     Au coeur de l'eau Chambres d'hôtes
+                </h3>
+                <p>
+                     Nuit à partir de 71€
+                </p>
+                <p><img src="#" alt="logo-4-stars"/></p>
+            </div>
+        </div>
+        <div class="most-popular-example">
+            <p><img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="phtot-hotel-bleublanc"/></p>
+            <div class="most-popular-description">
+                <h3>
+                    Hôtel Tout bleu et Blanc
+                </h3>
+                <p>
+                     Nuit à partir de 68€
+                </p>
+                <p><img src="#" alt="logo-5-stars"/></p>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 30px 45px 15px 45px;
+    max-width: 1550px;
+}
+
+.logo
+{
+    padding-left: 15px;
+}
+
+.logo img
+{
+    height: 60px;
+}
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li
+{
+    margin: 0px 10px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: inherit;
+    padding: 48px 15px;
+}
+nav ul li a:hover
+{
+    border-top: solid #0065FC 3px;
+    color: #0065FC;
+    
+}
+
+.search
+{
+    display:flex;
+    flex-direction: column;
+    margin: 0px 40px;
+}
+
+.search h1
+{
+    font-size: 24px;
+    font-weight: 750;
+    margin-bottom: 0px;
+}
+.search p
+{
+    margin-top: 5px;
+}
+form
+{
+    display: flex;
+    flex-direction: row;
+    height: 50px
+}
+
+.search-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F2F2F2;
+    width: 50px;
+    border-radius: 15px 0 0 15px;
+}
+
+#position
+{
+    height: 50px;
+    border: solid 1px #F2F2F2;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.search-button
+{
+    height: 50px;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    color: white;
+    font-weight: 600;
+
+}
+.fas
+{
+    font-size: 20px;
+}
+
+.filters
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filters-list
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+.filters-list h2
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+.filters ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.filters-element
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    position: relative;
+    flex-wrap: wrap;
+    border: solid #F2F2F2 3px;
+    border-radius: 25px;
+    height: 50px;
+    padding: 0 30px;
+}
+.filters-element a
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 700;
+}
+.filter-description span
+{
+    padding-left: 12px;
+}
+.filters-logo
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 5px;
+}
+.filters-element .fas
+{
+    color: #0065FC;
+}
+.info
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.info p
+{
+    margin : 0px 10px;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.accomodation
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.accomodation-items
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+}
+
+.accomodation-example
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.accomodation-example img
+{
+    width: 200px;
+    height : 150px
+}
+
+.most-popular
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.most-popular-title
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.most-popular-example
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    margin: 20px;
+}
+
+.most-popular-description
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.most-popular-example img
+{
+    width: 200px;
+    height : 150px;
+}
