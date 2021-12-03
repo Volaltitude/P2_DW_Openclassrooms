@@ -26,6 +26,9 @@ header
     max-width: 1550px;
 }
 
+main{
+    display: block;
+}
 .logo
 {
     padding-left: 15px;
@@ -111,6 +114,7 @@ form
     border: none;
     color: white;
     font-weight: 600;
+    padding-right: 10px;
 
 }
 .fas
@@ -128,7 +132,7 @@ form
 {
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin: 20px 0 20px 20px ;
 }
 .filters-list h2
 {
@@ -154,7 +158,8 @@ form
     border: solid #F2F2F2 3px;
     border-radius: 25px;
     height: 50px;
-    padding: 0 30px;
+    padding: 0 40px;
+    border-left: none;
 }
 .filters-element a
 {
@@ -163,9 +168,10 @@ form
     font-size: 20px;
     font-weight: 700;
 }
-.filter-description span
+.filters-description
 {
-    padding-left: 12px;
+    position: relative;
+    left: 20px;
 }
 .filters-logo
 {
@@ -177,10 +183,7 @@ form
     height: 50px;
     background-color: #DEEBFF;
     border-radius: 50%;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 5px;
+    left: 0px
 }
 .filters-element .fas
 {
@@ -190,14 +193,29 @@ form
 {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
+.info-logo i
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 13px;
+   color: #0065FC;
+   border: solid #F2F2F2 1px;
+   padding: 5px;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+}
 .info p
 {
     margin : 0px 10px;
+    font-weight: 400;
 }
 
-main
+.main
 {
     display: flex;
     flex-direction: row;

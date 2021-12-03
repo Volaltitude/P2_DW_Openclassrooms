@@ -3,8 +3,8 @@
 <head>
     <meta charset="uft-8">
     <meta name="viewport" content="width=device-width, inititial-scale=1.0", user-scalable=no>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/4d935f5051.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,7 @@
         </ul>
     </nav>
 </header>
+<main>
 <section class="search">
     <div class="search-title">
         <h1>
@@ -59,30 +60,41 @@
                 </div>
             </div>
             <div class="filters-element">
-                <i class="fas fa-child"></i>
-                <a href="#">Familial</a>
+                <div class="filters-logo">
+                    <i class="fas fa-child"></i>
+                </div>
+                <div class="filters-description">
+                    <a href="#"><span>Familial</span></a>
+                </div>
             </div>
             <div class="filters-element">
-                <i class="fas fa-heart"></i>
-                <a href="#">Romantique</a>
+                <div class="filters-logo">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="filters-description">
+                    <a href="#"><span>Romantique</span></a>
+                </div>
             </div>
             <div class="filters-element">
-                <i class="fas fa-dog"></i>
-                <a href="#">Animaux autorisés</a>
+                <div class="filters-logo">
+                    <i class="fas fa-dog"></i>
+                </div>
+                <div class="filters-description">
+                    <a href="#"><span>Animaux autorisés</span></a>
+                </div>
             </div>
         </div>
     </div>
     <div class="info">
-        <p>
+        <div class="info-logo">
             <i class="fas fa-info"></i>
-        </p>
+        </div>
         <p>
             Plus de 500 logements sont disponibles dans cette ville
         </p>
     </div>
 </section>
-
-<main>
+<section class="main">
     <div class="accomodation">
         <h2 id="accomodation-anchor">
             Hébergements à Marseille
@@ -197,6 +209,7 @@
             </div>
         </div>
     </div>
+</section>
 </main>
 </body>
 </html>
