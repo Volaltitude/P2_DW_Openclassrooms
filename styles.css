@@ -12,14 +12,17 @@ body
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 500;
+    width: 1400px;
 }
+
+/* HEADER */
 
 header
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;  
     font-weight: 500;
     font-size: 18px;
     margin: 30px 45px 15px 45px;
@@ -27,7 +30,8 @@ header
 }
 
 main{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 .logo
 {
@@ -63,6 +67,8 @@ nav ul li a:hover
     color: #0065FC;
     
 }
+
+/* SEARCH */
 
 .search
 {
@@ -121,6 +127,8 @@ form
 {
     font-size: 20px;
 }
+
+/* FILTERS */
 
 .filters
 {
@@ -212,15 +220,18 @@ form
 .info p
 {
     margin : 0px 10px;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 16px;
 }
 
-.main
+.proposition
 {
     display: flex;
     flex-direction: row;
     margin: 20px;
 }
+
+/* ACCOMODATION */
 
 .accomodation
 {
@@ -230,29 +241,93 @@ form
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
+    height: 570px;
+    width: 850px;
 }
 
+.accomodation h2
+{
+    font-size: 20px;
+    font-weight: 700;
+}
 .accomodation-items
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 800px;
-    height: 800px;
 }
 
 .accomodation-example
 {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px #999;
+    padding: 5px;
+    line-height: 0.2;
+}
+
+.accomodation-example:hover
+{
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
 }
 
 .accomodation-example img
 {
-    width: 200px;
-    height : 150px
+    object-fit: cover;
+    width: 230px;
+    height: 110px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
+
+.container-example
+{
+    margin: 0 0 5px 10px;
+}
+.container-example h3
+{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.container-example p
+{
+    font-size: 14px;
+
+}
+
+.container-example p em
+{
+    font-weight: 700;
+}
+
+.blue-star
+{
+    color: #0065FC;
+    font-size: 11px;
+    letter-spacing: -4px;
+}
+
+.grey-star
+{
+    color: #F2F2F2;
+    font-size: 11px;
+    letter-spacing: -4px;
+}
+
+
+/* MOST-POPULAR */
 
 .most-popular
 {
@@ -263,30 +338,235 @@ form
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
+    width: 400px;
+    height: 570px
 }
 
 .most-popular-title
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    padding: 0;
 }
+
+.most-popular-title h2
+{
+    font-size: 20px;
+    font-weight: 800;
+}
+
 
 .most-popular-example
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: no-wrap;
-    margin: 20px;
+    margin: 13px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow : 0px 5px 20px #999;
+}
+
+.most-popular-example:hover
+{
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.most-popular-example img
+{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+    height: 120px;
+    width: 120px;
 }
 
 .most-popular-description
 {
     display: flex;
     flex-direction: column;
+    padding: 0 15px;
 }
 
-.most-popular-example img
+.most-popular-description h3
 {
-    width: 200px;
-    height : 150px;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 10px 0 0 0;
+}
+
+.most-popular-description p
+{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 2px;
+}
+
+.most-popular-description .rate
+{
+    margin-top: 25px;
+}
+.most-popular-description em
+{
+    font-weight: 700;
+}
+
+/* ACTIVITIES */
+
+.activities
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 400px;
+    width: 1330px;
+    padding: 0 30px;
+    margin-left: 20px;
+}
+
+.activities img
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 280px;
+}
+
+.activities-block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 280px:
+}
+
+.activities-container-spread
+{
+    height: 100%;
+    width: 280px;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.activities-container-spread img
+{
+    object-fit: cover;
+    height: 400px;
+}
+
+.activities-container-fort 
+{
+    height: 230px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px;
+    box-shadow;
+}
+
+.activities-container-fort img
+{
+    object-fit: cover;
+    height: 180px;
+}
+
+.activities-container-ile
+{
+    height: 150px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 20px #999;
+    border-radius: 20px;
+}
+
+.activities-container-ile img
+{
+    object-fit: cover;
+    height: 100px;
+}
+.activities-container-notre
+{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px;
+}
+
+.activities-container-notre img
+{
+    object-fit: cover;
+    height: 120px;
+}
+.activities-container-parc
+{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px;
+}
+
+.activities-container-parc img
+{
+    object-fit: cover;
+    height: 140px;
+}
+
+.activities h3
+{
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.activities-title 
+{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+
+/* FOOTER */
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.index
+{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    font-size: 16px;
+    margin-right: 180px;
+}
+
+.index h2
+{
+    font-size: 18px;
+}
+
+.index p
+{
+    margin: 5px 0
 }
