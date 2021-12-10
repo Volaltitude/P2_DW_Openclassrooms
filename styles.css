@@ -153,6 +153,18 @@ button{
     margin: 20px 0 20px 5px ;
     flex-wrap: wrap;
 }
+
+.filters-element:hover
+{
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
 .filters-list h2
 {
     font-weight: 700;
@@ -400,6 +412,9 @@ a em
     transition: all 0.2s ease;
 }
 
+.most-popular-example a{
+    width: 100%;
+}
 .most-popular-example img
 {
     border-top-left-radius: 15px;
@@ -643,8 +658,12 @@ footer
 
     .most-popular-description{
         padding: 0;
+        margin-left: 5px;
     }
 
+    .most-popular-description h3{
+        margin-top: 6px;
+    }
     .activities{
         flex-wrap: wrap;
     }
@@ -713,13 +732,14 @@ footer
     #position{
         height: 40px;
         border-right: none;
-        width: 150px;
+        width: 170px;
     }
 
     .filters{
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        margin-top: 10px;
     }
 
     .filters h2{
